@@ -10,6 +10,8 @@ function afisareC(){
     document.getElementById("TextBloc").style.visibility="visible";
     document.getElementById("button3").style.visibility="hidden";
     document.getElementById("button3").style.position="absolute";
+    document.getElementById("Arrow").style.visibility="visible";
+    document.getElementById("ArrowBloc").style.visibility="visible";
     let x=Math.random()*11;
     console.log(y)
     switch(Math.floor(x)){
@@ -53,6 +55,8 @@ function afisareS(){
     document.getElementById("TextBloc").style.visibility="visible";
     document.getElementById("button2").style.visibility="hidden";
     document.getElementById("button2").style.position="absolute";
+    document.getElementById("Arrow").style.visibility="visible";
+    document.getElementById("ArrowBloc").style.visibility="visible";
     let x=Math.random()*11;
     console.log(y)
     switch(Math.floor(x)){
@@ -90,4 +94,13 @@ function afisareS(){
              document.getElementById("text").innerHTML="Bunătatea ta depășește granițele, întocmai ca o mare fără sfârșit.";
              break;
     } 
+}
+function back(){
+    document.getElementById("TextBloc").style.visibility="hidden";
+    document.getElementById("button3").style.visibility="visible";
+    document.getElementById("button2").style.visibility="visible";
+    document.getElementById("Arrow").style.visibility="hidden";
+    document.getElementById("ArrowBloc").style.visibility="hidden";
+    document.getElementById("button2").style.position="initial";
+    document.getElementById("button3").style.position="initial";
 }

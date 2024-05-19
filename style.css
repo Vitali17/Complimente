@@ -64,6 +64,15 @@
     font-family: "Poetsen One", sans-serif;
   }
   #Arrow{
-    font-size: 20px;
-    margin-left: auto;
+    font-size: 15px;
+    visibility: hidden;
+    margin-top:23%
+  }
+  #ArrowBloc{
+    border-radius: 15px;
+    visibility: hidden;
+    background-color: red;
+    text-align: center;
+    width: 35px;
+    height: 30px;
   }
