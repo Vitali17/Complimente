@@ -112,6 +112,7 @@ function back(){
     document.getElementById("button3").style.position="initial";
     document.getElementById("input").style.visibility="hidden";
     document.getElementById("input").style.position="absolute";
+    document.getElementById("text").innerHTML="";  
 }
 function afisareP(){
      let nume = document.getElementById("input").value;
@@ -162,7 +163,7 @@ const complimenteP = [
     document.getElementById("ArrowBloc").style.visibility="visible";
 
     if(nume === ""){
-        alert("Te rog să introduci un nume pentru a primi complimente personalizate!");
+        alert("Te rog să introduci un nume pentru a primi complimente personalizate! ☺️");
         return;
     }
 
