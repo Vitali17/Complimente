@@ -1,4 +1,7 @@
 //23
+
+let nume;
+
 const complimenteR = [
 "Arăți atât de bine încât oglinda cere autograf.",
 "Ești mai tare decât Wi-Fi-ul cu semnal maxim.",
@@ -57,19 +60,27 @@ const complimenteA = [
 "Ești atât de drăguță încât până și norii se dau la o parte pentru tine.",
 "Ești mai strălucitoare decât un diamant."
 ];
+
 function afisareStart(){
     document.getElementById("button2").style.visibility="visible";
     document.getElementById("button3").style.visibility="visible";
     document.getElementById("button1").style.visibility="hidden";
     document.getElementById("button1").style.position="absolute";
+    document.getElementById("button4").style.visibility="visible";
+    document.getElementById("input").style.position="absolute";
 }
 function afisareC(){
     document.getElementById("text").innerHTML=" ";
     document.getElementById("TextBloc").style.visibility="visible";
     document.getElementById("button3").style.visibility="hidden";
     document.getElementById("button3").style.position="absolute";
+    document.getElementById("button4").style.visibility="hidden";
+    document.getElementById("button4").style.position="absolute";
+    document.getElementById("input").style.visibility="hidden";
+    document.getElementById("input").style.position="absolute";
     document.getElementById("Arrow").style.visibility="visible";
     document.getElementById("ArrowBloc").style.visibility="visible";
+
     let x = Math.floor(Math.random() * complimenteR.length);
     console.log(x)
     document.getElementById("text").innerHTML=complimenteR[x];
@@ -79,7 +90,11 @@ function afisareS(){
     document.getElementById("TextBloc").style.visibility="visible";
     document.getElementById("button2").style.visibility="hidden";
     document.getElementById("button2").style.position="absolute";
+    document.getElementById("button4").style.visibility="hidden";
+    document.getElementById("button4").style.position="absolute";
     document.getElementById("Arrow").style.visibility="visible";
+    document.getElementById("input").style.visibility="hidden";
+    document.getElementById("input").style.position="absolute";
     document.getElementById("ArrowBloc").style.visibility="visible";
     let y = Math.floor(Math.random() * complimenteA.length);
     console.log(y);
@@ -89,8 +104,71 @@ function back(){
     document.getElementById("TextBloc").style.visibility="hidden";
     document.getElementById("button3").style.visibility="visible";
     document.getElementById("button2").style.visibility="visible";
+    document.getElementById("button4").style.visibility="visible";
+    document.getElementById("button4").style.position="initial";
     document.getElementById("Arrow").style.visibility="hidden";
     document.getElementById("ArrowBloc").style.visibility="hidden";
     document.getElementById("button2").style.position="initial";
     document.getElementById("button3").style.position="initial";
+    document.getElementById("input").style.visibility="hidden";
+    document.getElementById("input").style.position="absolute";
+}
+function afisareP(){
+     let nume = document.getElementById("input").value;
+
+const complimenteP = [
+`${nume} are un zâmbet care poate lumina toată ziua.`,
+`${nume} are un stil pe care nu-l poate copia nimeni.`,
+`${nume} are o energie care face lumea mai bună.`,
+`${nume} are o personalitate care atrage oamenii.`,
+`${nume} are un simț al umorului genial.`,
+`${nume} are un vibe pozitiv care se simte imediat.`,
+`${nume} are o carismă naturală.`,
+`${nume} are o inteligență care impresionează.`,
+`${nume} are un farmec care nu poate fi explicat.`,
+`${nume} are un zâmbet care face oamenii să zâmbească și ei.`,
+`${nume} are o prezență care schimbă atmosfera în bine.`,
+`${nume} are o energie mai bună decât cafeaua dimineața.`,
+`${nume} are o personalitate care rămâne în minte.`,
+`${nume} are o bunătate rară.`,
+`${nume} are o combinație perfectă de inteligență și umor.`,
+`${nume} are un stil care iese în evidență.`,
+`${nume} are un vibe care face orice zi mai bună.`,
+`${nume} are un talent natural de a face oamenii fericiți.`,
+`${nume} are o carismă care atrage atenția.`,
+`${nume} are un zâmbet care merită premiu.`,
+`${nume} are o energie pozitivă molipsitoare.`,
+`${nume} are un farmec care face conversațiile interesante.`,
+`${nume} are o personalitate care face lumea mai colorată.`,
+`${nume} are o prezență care aduce bună dispoziție.`,
+`${nume} are un stil care nu poate trece neobservat.`,
+`${nume} are un vibe care face totul mai plăcut.`,
+`${nume} are o energie care ridică moralul oricui.`,
+`${nume} are un zâmbet care ar putea opri traficul.`,
+`${nume} are o personalitate care face orice loc mai interesant.`,
+`${nume} are o carismă pe care nu o vezi în fiecare zi.`
+];
+
+    document.getElementById("input").style.visibility="visible";
+    document.getElementById("input").style.position="initial";
+    document.getElementById("button2").style.visibility="hidden";
+    document.getElementById("button2").style.position="absolute";
+    document.getElementById("button3").style.visibility="hidden";
+    document.getElementById("button3").style.position="absolute";
+    document.getElementById("button4").style.visibility="visible";
+    document.getElementById("button4").style.position="initial";
+    document.getElementById("TextBloc").style.visibility="visible";
+    document.getElementById("Arrow").style.visibility="visible";
+    document.getElementById("ArrowBloc").style.visibility="visible";
+
+    if(nume === ""){
+        alert("Te rog să introduci un nume pentru a primi complimente personalizate!");
+        return;
+    }
+
+    let z = Math.floor(Math.random() * complimenteP.length);
+
+    console.log(z);
+
+    document.getElementById("text").innerHTML=complimenteP[z];  
 }
