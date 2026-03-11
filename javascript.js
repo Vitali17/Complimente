@@ -62,6 +62,8 @@ const complimenteA = [
 ];
 
 function afisareStart(){
+
+    Titlu.style.padding = "0";
     document.getElementById("button2").style.visibility="visible";
     document.getElementById("button3").style.visibility="visible";
     document.getElementById("button1").style.visibility="hidden";

@@ -13,7 +13,7 @@
     text-align: center;
   }
   #button1{
-    background: linear-gradient(135deg,#7d2da1,#a84648);
+    background: linear-gradient(45deg,#7b2ff7,#f107a3);
     width: 200px;
     margin-left: 100px;
     border-radius: 10px;
@@ -35,7 +35,7 @@
 
 
   #button2{
-    background-color: #7d2da1;
+    background: linear-gradient(45deg,#7b2ff7,#f107a3);
     visibility: hidden;
     border-radius: 10px;
     border: none;
@@ -55,7 +55,7 @@
   }
 
   #button3{
-    background-color: #7d2da1;
+    background: linear-gradient(45deg,#7b2ff7,#f107a3);
     visibility: hidden;
     border-radius: 10px;
     border: none;
@@ -74,7 +74,7 @@
   }
 
    #button4{
-    background-color: #7d2da1;
+    background: linear-gradient(45deg,#7b2ff7,#f107a3);
     visibility: hidden;
     border-radius: 10px;
     border: none;
@@ -111,15 +111,25 @@
     border-radius: 10px;
     height: 100px;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
+
   #Titlu{
+    padding-top:70px;
     font-family: "Poetsen One", sans-serif;
   }
+  #Subtitlu{
+    font-family: "Poetsen One", sans-serif;
+    color: rgb(255, 6, 6);
+  }
+
   #Arrow{
     font-size: 15px;
     visibility: hidden;
     margin-top:15%
   }
+
   #ArrowBloc{
     border-radius: 20px;
     visibility: hidden;
@@ -138,10 +148,6 @@
 
   @media (max-width: 768px){
 
-  #bloc{
-    width: 90%;
-    margin-top: 30%;
-  }
 
   #button1{
     width: 80%;
